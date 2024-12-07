@@ -109,7 +109,7 @@ navigate("/reportissue")
       </div>
 
       {/* Assigned Laptops Section */}
-<div className="container" style={{ marginTop: "30px" }}>
+<div className="container " style={{ marginTop: "30px" }}>
   <div className="row">
   {/* Request Section */}
   
@@ -154,7 +154,7 @@ navigate("/reportissue")
           </div>
         </div>
       </div>
-   <div className="col-lg-12 col-xl-12">
+   <div className="col-lg-12 col-xl-12 assignContainer">
    <div className="row">
    {assignedLaptops.length > 0 ? (
       assignedLaptops.map((laptop) => (
@@ -181,33 +181,33 @@ navigate("/reportissue")
                     />
                   </div>
                 </div>
-                <div className=" col-lg-9 col-xl-9 " >
+                <div className=" col-lg-9 col-xl-9  col-sm-12 " >
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-6 col-sm-12">
                   <div className="container" style={{marginLeft:"93px" }}>
-                  <div className="mt-1 mb-0 text-muted medium" style={{fontSize:'20px'}}>
+                  <div className="mt-1 mb-0 text-muted medium" >
                     <span>Brand</span>
                     <span className="text-primary"> : </span>
                     <span>{laptop.brand}</span>
                   </div>
-                  <div className="mb-2 text-muted medium" style={{fontSize:'20px'}}>
+                  <div className="mb-2 text-muted medium" >
                     <span>Model</span>
                     <span className="text-primary"> : </span>
                     <span>{laptop.model}</span>
                   </div>
-                  <div className="mb-2 text-muted medium" style={{fontSize:'20px'}}>
+                  <div className="mb-2 text-muted medium" >
                     <span>Serial Number</span>
                     <span className="text-primary"> : </span>
                     <span>{laptop.serialNumber}</span>
                   </div>
-                  <div className="mb-2 text-muted medium" style={{fontSize:'20px'}}>
+                  <div className="mb-2 text-muted medium" >
                     <span>Condition</span>
                     <span className="text-primary"> : </span>
                     <span>{laptop.condition}</span>
                   </div>
                   </div>
                   </div>
-                  <div className="col-6">
+                  <div className="col-6 col-sm-12">
                   <button
                   onClick={()=>handleReport(laptop._id)}
                             type="button"

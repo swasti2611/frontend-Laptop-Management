@@ -15,7 +15,7 @@ import RequestLaptop from './Components/RequestLaptop/RequestLaptop';
 import UpdateLaptop from './Components/UpdateLaptop/UpdateLaptop';
 import AdminLogin from './Components/AdminLogin/AdminLogin';
 import Assignlaptop from './Components/AssignLaptop/Assignlaptop';
-import {} from "./"
+
 function App() {
   return (
     <BrowserRouter>
