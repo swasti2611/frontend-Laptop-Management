@@ -67,7 +67,7 @@ navigate("/reportissue")
           width: "100%",
           height: "220px",
           backgroundColor: "white",
-          marginLeft: "70px",
+          marginLeft: "110px",
           borderRadius: "10px",
         }}
       >
@@ -227,7 +227,7 @@ navigate("/reportissue")
         </div>
       ))
     ) : (
-      <p>No laptops assigned yet.</p>
+      <p style={{marginLeft:"50px"}}>No laptops assigned yet.</p>
     )}
    </div>
    </div>
