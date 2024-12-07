@@ -13,7 +13,9 @@ const Sidebar = () => {
   };
   const handleLogout = () => {
     localStorage.removeItem("token"); // Remove token from localStorage
-    window.location.href = "/login"; // Redirect to login page
+    // window.location.href = "/login"; // Redirect to login page
+    navigate("/login")
+    
   };
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
