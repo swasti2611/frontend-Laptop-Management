@@ -214,7 +214,7 @@ navigate("/reportissue")
                             className="btn bg-info"
                             style={{ marginTop: "30px", marginLeft: "30px",width:'140px' }}
                           >
-                          Report an issue
+                          Report
                             {/* <Link to="/request-laptop">report an issue</Link> */}
                           </button>
                   </div>
