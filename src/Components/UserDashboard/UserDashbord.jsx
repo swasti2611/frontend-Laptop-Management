@@ -227,7 +227,7 @@ navigate("/reportissue")
         </div>
       ))
     ) : (
-      <p style={{marginLeft:"50px"}}>No laptops assigned yet.</p>
+      <p style={{marginLeft:"100px"}}>No laptops assigned yet.</p>
     )}
    </div>
    </div>
