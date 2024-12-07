@@ -154,72 +154,72 @@ navigate("/reportissue")
           </div>
         </div>
       </div>
-   <div className="col-lg-12 col-xl-12 assignContainer">
-   <div className="row">
-   {assignedLaptops.length > 0 ? (
+      <div className="container-fluid assignContainer">
+  <div className="row">
+    {assignedLaptops.length > 0 ? (
       assignedLaptops.map((laptop) => (
-        <div className="col-lg-" key={laptop.assignmentId} >
+        <div
+          className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4"
+          key={laptop.assignmentId}
+        >
           <div
-            className="card shadow-0 border rounded-3"
-            style={{ width: "755px", marginTop:"10px", padding:'30px',}}
+            className="card shadow-0 border rounded-3 h-100"
+            style={{ padding: "20px" }}
           >
-            <div className="card-body" >
+            <div className="card-body">
               <div className="row">
-
-                <div className="col-md-12 col-lg-3 col-xl-3">
+                {/* Image Section */}
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
                   <div className="bg-image hover-zoom ripple rounded ripple-surface">
                     <img
                       src="https://i.pinimg.com/736x/d0/70/07/d070075c1d5b8d094d43a36ea431d44c.jpg"
                       alt="Product"
-                      style={{
-                        width: "200px",
-                        height: "160px",
-                        objectFit: "cover",
-                        padding: "10px",
-                      borderRadius:'20px'
-                      }}
+                      className="img-fluid rounded"
+                      style={{ height: "160px", objectFit: "cover" }}
                     />
                   </div>
                 </div>
-                <div className=" col-lg-9 col-xl-9  col-sm-12 " >
-                <div className="row">
-                  <div className="col-6 col-sm-12">
-                  <div className="container" style={{marginLeft:"93px" }}>
-                  <div className="mt-1 mb-0 text-muted medium" >
-                    <span>Brand</span>
-                    <span className="text-primary"> : </span>
-                    <span>{laptop.brand}</span>
+
+                {/* Laptop Details Section */}
+                <div className="col-12 col-md-8">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="container">
+                        <div className="mt-1 mb-0 text-muted medium">
+                          <span>Brand</span>
+                          <span className="text-primary"> : </span>
+                          <span>{laptop.brand}</span>
+                        </div>
+                        <div className="mb-2 text-muted medium">
+                          <span>Model</span>
+                          <span className="text-primary"> : </span>
+                          <span>{laptop.model}</span>
+                        </div>
+                        <div className="mb-2 text-muted medium">
+                          <span>Serial Number</span>
+                          <span className="text-primary"> : </span>
+                          <span>{laptop.serialNumber}</span>
+                        </div>
+                        <div className="mb-2 text-muted medium">
+                          <span>Condition</span>
+                          <span className="text-primary"> : </span>
+                          <span>{laptop.condition}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Button Section */}
+                    <div className="col-12 d-flex justify-content-center mt-3">
+                      <button
+                        onClick={() => handleReport(laptop._id)}
+                        type="button"
+                        className="btn btn-info"
+                        style={{ width: "140px" }}
+                      >
+                        Report
+                      </button>
+                    </div>
                   </div>
-                  <div className="mb-2 text-muted medium" >
-                    <span>Model</span>
-                    <span className="text-primary"> : </span>
-                    <span>{laptop.model}</span>
-                  </div>
-                  <div className="mb-2 text-muted medium" >
-                    <span>Serial Number</span>
-                    <span className="text-primary"> : </span>
-                    <span>{laptop.serialNumber}</span>
-                  </div>
-                  <div className="mb-2 text-muted medium" >
-                    <span>Condition</span>
-                    <span className="text-primary"> : </span>
-                    <span>{laptop.condition}</span>
-                  </div>
-                  </div>
-                  </div>
-                  <div className="col-6 col-sm-12">
-                  <button
-                  onClick={()=>handleReport(laptop._id)}
-                            type="button"
-                            className="btn bg-info"
-                            style={{ marginTop: "30px", marginLeft: "30px",width:'140px' }}
-                          >
-                          Report
-                            {/* <Link to="/request-laptop">report an issue</Link> */}
-                          </button>
-                  </div>
-                </div>
-                
                 </div>
               </div>
             </div>
@@ -227,10 +227,11 @@ navigate("/reportissue")
         </div>
       ))
     ) : (
-      <p style={{marginLeft:"100px"}}>No laptops assigned yet.</p>
+      <p className="text-center">No laptops assigned yet.</p>
     )}
-   </div>
-   </div>
+  </div>
+</div>
+
   </div>
 </div>
 
