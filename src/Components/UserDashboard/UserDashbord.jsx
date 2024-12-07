@@ -212,7 +212,7 @@ navigate("/reportissue")
                   onClick={()=>handleReport(laptop._id)}
                             type="button"
                             className="btn bg-info"
-                            style={{ marginTop: "30px", marginLeft: "40px",width:'200px' }}
+                            style={{ marginTop: "30px", marginLeft: "30px",width:'140px' }}
                           >
                           Report an issue
                             {/* <Link to="/request-laptop">report an issue</Link> */}

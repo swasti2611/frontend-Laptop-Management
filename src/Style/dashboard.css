@@ -48,3 +48,19 @@ body{
 .f-right {
     float: right;
 }
+
+
+@media (max-width: 576px) {
+    /* Styles for extra small devices */
+  }
+
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* Styles for large devices */
+  }
+
+
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    /* Styles for extra large devices */
+  }
